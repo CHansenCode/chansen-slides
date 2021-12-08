@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    //
+    "**/.git": false,
+    "**/.next": false,
+    "**/node_modules": false,
+    "**/out": false,
+
+    //
+    "**/.gitignore": false,
+    "**/.prettierrc": true,
+    "**/.eslintrc.json": true,
+    //
+    "**/package-lock.json": true,
+    "**/jsconfig.json": true,
+    "**/next.config.js": true
+  }
+}

@@ -1,0 +1,34 @@
+.main {
+  position: relative;
+  z-index: 1;
+
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  padding: 5rem;
+  padding-bottom: 10rem;
+
+  > section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .main {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main {
+    font-size: 12px;
+  }
+}

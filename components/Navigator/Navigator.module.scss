@@ -1,0 +1,100 @@
+$btn_size: 2rem;
+$half: $btn_size / 2;
+
+.navigator {
+  position: fixed;
+  bottom: 4rem;
+  left: 5rem;
+  height: 4rem;
+  width: calc(100vw - 10rem);
+
+  display: grid;
+  grid-template: 'prev filler info settings next' 1fr / #{$btn_size} #{$btn_size} 1fr #{$btn_size} #{$btn_size};
+  padding: 0 $half;
+  grid-gap: $half;
+
+  align-items: center;
+  box-shadow: 0 0 2rem -1.5rem currentColor;
+
+  border-radius: 0.5rem;
+  opacity: 0;
+}
+.navigator_open {
+  opacity: 1;
+}
+
+.info {
+  position: relative;
+  height: 100%;
+  grid-area: info;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  > * {
+    margin: 0 1rem;
+  }
+  > h4 {
+    font-weight: 500;
+  }
+}
+
+.pageNumber {
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  > p {
+    margin: 0 0.25rem 0 0;
+  }
+  > h4 {
+    width: 1rem;
+    margin: 0 0.25rem;
+  }
+  > i {
+    font-size: 1.25rem;
+    margin: 0 0.25rem;
+  }
+}
+
+.navigator > button {
+  height: $btn_size;
+  width: $btn_size;
+  border-radius: 50%;
+  box-shadow: 0.25rem 0.25rem 0.25rem -0.2rem rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    box-shadow: inset 0.25rem 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.btn_goBack {
+  padding: 0 !important;
+}
+
+.btn_prev,
+.btn_next {
+  font-size: 2rem;
+}
+
+.btn_prev {
+  grid-area: prev;
+}
+.btn_next {
+  grid-area: next;
+}
+
+.navigator {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    padding: 0;
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none !important;
+}

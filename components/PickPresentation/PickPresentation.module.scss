@@ -1,0 +1,48 @@
+.ul {
+  padding: 1rem;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  > svg {
+    margin-bottom: 4rem;
+  }
+
+  transition: 0.25s ease;
+
+  > div {
+    margin-left: 4rem;
+    width: 100%;
+    > h4 {
+      letter-spacing: 1.5px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.ul li {
+  position: relative;
+  font-weight: 700;
+  margin: 0.25rem 0;
+
+  > span {
+    position: absolute;
+    left: -1rem;
+    opacity: 0;
+  }
+}
+
+.ul li:hover {
+  margin-left: 0.25rem;
+}
+
+.ul .hover_or_focus {
+  margin-left: 0.25rem;
+  > span {
+    left: -0.5rem;
+    opacity: 1;
+  }
+}
